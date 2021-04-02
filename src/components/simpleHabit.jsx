@@ -11,7 +11,7 @@ const SimpleHabit = (props) => {
 
   useEffect(() => {
     console.log(`mounted and updated! : ${count}`);
-  }, []);
+  }, []); // 원하는 data가 변경되었을 때만 호출되기를 원하면 해당 data를 두번째 인자로 넣어주면 됨. [] 상태면 mounte 되었을 때만 실행
 
   return (
     <li className="habit">
